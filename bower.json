@@ -1,0 +1,22 @@
+{
+  "name": "scality-form",
+  "version": "0.0.0",
+  "authors": [
+    "Curtis Bowman <curtis@cbowman.net>"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "js/vendor/packages",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "Chart.js": "~1.0.2"
+  },
+  "devDependencies": {
+    "vue": "~1.0.13"
+  }
+}

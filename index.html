@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Scality - Webform</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <script src="/js/vendor/packages/chart.js/Chart.js"></script>
+        <script src="/js/vendor/packages/vue/dist/vue.js"></script>
+    </head>
+    <body>
+        <div class="site__wrapper" style="width: 60%; margin: 0 auto; text-align: center;">
+            <h1 class="site__title">Use our calculator to get an idea of your TCO</h1>
+            <p class="site__title-sub">Calculate the frist 5 years savings with our handy calculator!</p>
+
+            <div class="form" style="padding: 1em 0; border-top: 1px solid #cecece; border-bottom: 1px solid #cecece;">
+                    <form action="#">
+                        <div class="form__wrapper" style="clear: both; overflow: hidden;">
+                            <div class="form__half" style="float: left; width: 49%;">
+                                What is your current amount of storage?
+                                <select name="currentStorage" id="currentStorage">
+                                    <option value="0">No current storage</option>
+                                    <option value="100">100 terabytes</option>
+                                    <option value="200">200 terabytes</option>
+                                    <option value="300">300 terabytes</option>
+                                    <option value="400">400 terabytes</option>
+                                    <option value="500">500 terabytes</option>
+                                    <option value="600">600 terabytes</option>
+                                    <option value="700">700 terabytes</option>
+                                    <option value="800">800 terabytes</option>
+                                    <option value="900">900 terabytes</option>
+                                    <option value="1000">1,000 terabytes</option>
+                                    <option value="1100">1,100 terabytes</option>
+                                    <option value="1200">1,200 terabytes</option>
+                                    <option value="1300">1,300 terabytes</option>
+                                    <option value="1400">1,400 terabytes</option>
+                                    <option value="1500">1,500 terabytes</option>
+                                    <option value="1600">1,600 terabytes</option>
+                                    <option value="1700">1,700 terabytes</option>
+                                    <option value="1800">1,800 terabytes</option>
+                                    <option value="1900">1,900 terabytes</option>
+                                    <option value="2000">2,000 terabytes</option>
+                                    <option value="2100">2,100 terabytes</option>
+                                    <option value="2200">2,200 terabytes</option>
+                                    <option value="2300">2,300 terabytes</option>
+                                    <option value="2400">2,400 terabytes</option>
+                                    <option value="2500">2,500 terabytes</option>
+                                    <option value="2600">2,600 terabytes</option>
+                                    <option value="2700">2,700 terabytes</option>
+                                    <option value="2800">2,800 terabytes</option>
+                                    <option value="2900">2,900 terabytes</option>
+                                    <option value="3000">3,000 terabytes</option>
+                                    <option value="3100">3,100 terabytes</option>
+                                    <option value="3200">3,200 terabytes</option>
+                                    <option value="3300">3,300 terabytes</option>
+                                    <option value="3400">3,400 terabytes</option>
+                                    <option value="3500">3,500 terabytes</option>
+                                    <option value="3600">3,600 terabytes</option>
+                                    <option value="3700">3,700 terabytes</option>
+                                    <option value="3800">3,800 terabytes</option>
+                                    <option value="3900">3,900 terabytes</option>
+                                    <option value="4000">4,000 terabytes</option>
+                                    <option value="4100">4,100 terabytes</option>
+                                    <option value="4200">4,200 terabytes</option>
+                                    <option value="4300">4,300 terabytes</option>
+                                    <option value="4400">4,400 terabytes</option>
+                                    <option value="4500">4,500 terabytes</option>
+                                    <option value="4600">4,600 terabytes</option>
+                                    <option value="4700">4,700 terabytes</option>
+                                    <option value="4800">4,800 terabytes</option>
+                                    <option value="4900">4,900 terabytes</option>
+                                    <option value="5000">5,000 terabytes</option>
+                                </select>
+                            </div>
+                            <div class="form__half" style="float: left; width: 49%;">
+                                What is your projected expansion per year?
+                                <select name="expansionStorage" id="expansionStorage">
+                                    <option value="0">No plans for expansion</option>
+                                    <option value="100">100 terabytes</option>
+                                    <option value="200">200 terabytes</option>
+                                    <option value="300">300 terabytes</option>
+                                    <option value="400">400 terabytes</option>
+                                    <option value="500">500 terabytes</option>
+                                    <option value="600">600 terabytes</option>
+                                    <option value="700">700 terabytes</option>
+                                    <option value="800">800 terabytes</option>
+                                    <option value="900">900 terabytes</option>
+                                    <option value="1000">1,000 terabytes</option>
+                                    <option value="1100">1,100 terabytes</option>
+                                    <option value="1200">1,200 terabytes</option>
+                                    <option value="1300">1,300 terabytes</option>
+                                    <option value="1400">1,400 terabytes</option>
+                                    <option value="1500">1,500 terabytes</option>
+                                    <option value="1600">1,600 terabytes</option>
+                                    <option value="1700">1,700 terabytes</option>
+                                    <option value="1800">1,800 terabytes</option>
+                                    <option value="1900">1,900 terabytes</option>
+                                    <option value="2000">2,000 terabytes</option>
+                                    <option value="2100">2,100 terabytes</option>
+                                    <option value="2200">2,200 terabytes</option>
+                                    <option value="2300">2,300 terabytes</option>
+                                    <option value="2400">2,400 terabytes</option>
+                                    <option value="2500">2,500 terabytes</option>
+                                    <option value="2600">2,600 terabytes</option>
+                                    <option value="2700">2,700 terabytes</option>
+                                    <option value="2800">2,800 terabytes</option>
+                                    <option value="2900">2,900 terabytes</option>
+                                    <option value="3000">3,000 terabytes</option>
+                                    <option value="3100">3,100 terabytes</option>
+                                    <option value="3200">3,200 terabytes</option>
+                                    <option value="3300">3,300 terabytes</option>
+                                    <option value="3400">3,400 terabytes</option>
+                                    <option value="3500">3,500 terabytes</option>
+                                    <option value="3600">3,600 terabytes</option>
+                                    <option value="3700">3,700 terabytes</option>
+                                    <option value="3800">3,800 terabytes</option>
+                                    <option value="3900">3,900 terabytes</option>
+                                    <option value="4000">4,000 terabytes</option>
+                                    <option value="4100">4,100 terabytes</option>
+                                    <option value="4200">4,200 terabytes</option>
+                                    <option value="4300">4,300 terabytes</option>
+                                    <option value="4400">4,400 terabytes</option>
+                                    <option value="4500">4,500 terabytes</option>
+                                    <option value="4600">4,600 terabytes</option>
+                                    <option value="4700">4,700 terabytes</option>
+                                    <option value="4800">4,800 terabytes</option>
+                                    <option value="4900">4,900 terabytes</option>
+                                    <option value="5000">5,000 terabytes</option>
+                                </select>
+                            </div>
+                        </div>
+                        <a href="#" class="submit">Submit</a>
+                    </form>
+            </div>
+
+            <div class="graph">
+                <div class="graph__wrapper">
+                    <div class="graph__canvas">
+                                <canvas id="canvas" height="450" width="600"></canvas>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+        <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.10.2.min.js"><\/script>')</script>
+        <script src="/js/site.js"></script>
+
+    </body>
+</html>
