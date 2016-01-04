@@ -14,9 +14,12 @@
     "tests"
   ],
   "dependencies": {
-    "Chart.js": "~1.0.2"
+    "Chart.js": "~1.0.2",
+    "rangeslider.js": "~2.0.5"
   },
   "devDependencies": {
-    "vue": "~1.0.13"
+    "vue": "~1.0.13",
+    "seiyria-bootstrap-slider": "~6.0.4",
+    "ionrangeslider": "~2.1.2"
   }
 }

@@ -1,0 +1,56 @@
+/* apply a natural box layout model to all elements, but allowing components to change */
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+
+.form {
+    max-width: 30em;
+    margin: 0 auto;
+    padding: 1em;
+    text-align: center;
+}
+
+.chart {
+    max-width: 60em;
+    margin: 3em auto;
+    padding: 1em;
+}
+
+.range {
+    margin: 2em 0;
+}
+
+.current_price {
+    clear: both;
+    overflow: hidden;
+    margin: 0 auto;
+    max-width: 70em;
+}
+.pannel {
+    width: 49%;
+    padding: 1em;
+    float: left;
+    text-align: left;
+}
+
+.current_price h3 {
+    margin: 0;
+    padding: 1em 0;
+    border-bottom: 1px solid #cecece;
+}
+.current_price ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+.current_price ul li {
+    border-bottom: 1px solid #cecece;
+    margin: 0;
+    padding: .5em;
+    line-height: 100%;
+    font-size: .75em;
+}
